@@ -1,6 +1,6 @@
 <template>
 
-  <div class="page-lauout">
+  <div class="page-lauout" ref="layoutTop">
 
 
     <!--s: banner top-->
@@ -8,7 +8,7 @@
     <!--e: banner top-->
 
     <!--s: modular top-->
-    <Modular ref="mychild" :title="title" v-on:allTitle="allTitle"></Modular>
+    <Modular ref="myModularchild" v-on:modularFun="modularFun"></Modular>
     <!--e: modular top-->
 
 
@@ -24,27 +24,34 @@
     data () {
       return {
         clientHeight:window.innerHeight,    //窗口高度
-        alltitle:'',
-        title:false
+        modularObj:{},
+        layoutTop:'',
       }
     },
     methods:{
       handleScroll () {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-        if(scrollTop>this.alltitle-this.clientHeight){
-          console.log(3)
-          this.title = true
-          this.$refs.mychild.parentHandleclick(true)
+        let modularObj={};
+        if(scrollTop>this.modularObj.title+this.layoutTop-this.clientHeight){
+           modularObj = {"title":true,"liT":false,"liB":false}
         }else{
-          this.$refs.mychild.parentHandleclick(false)
+           modularObj = {"title":false,"liT":false,"liB":false}
         }
+        if(scrollTop>this.modularObj.liT+this.layoutTop-this.clientHeight){
+           modularObj = {"title":true,"liT":true,"liB":false}
+        }
+        if(scrollTop>this.modularObj.liB+this.layoutTop-this.clientHeight){
+           modularObj = {"title":true,"liT":true,"liB":true}
+        }
+        this.$refs.myModularchild.parentModularClick(modularObj)
       },
-      allTitle(msg){
-        this.alltitle = msg
+      modularFun(obj){
+        this.modularObj = obj
       }
     },
     mounted () {
       let _this = this;
+      _this.layoutTop = Math.abs(this.$refs['layoutTop'].getBoundingClientRect().top)
       window.addEventListener('scroll', this.handleScroll);
       window.onresize = () => {
         return (() => {
