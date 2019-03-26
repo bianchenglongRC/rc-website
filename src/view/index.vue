@@ -7,9 +7,13 @@
     <Banner></Banner>
     <!--e: banner top-->
 
-    <!--s: modular top-->
+    <!--s: modular-->
     <Modular ref="myModularchild" v-on:modularFun="modularFun"></Modular>
-    <!--e: modular top-->
+    <!--e: modular-->
+
+    <!--s: history-->
+    <History></History>
+    <!--e: history-->
 
 
   </div>
@@ -18,9 +22,10 @@
 <script>
   import Banner from '@/components/rc-banner-top'
   import Modular from '@/components/rc-modular'
+  import History from '@/components/rc-history'
   export default {
     name: 'app',
-    components:{ Banner,Modular },
+    components:{ Banner,Modular,History },
     data () {
       return {
         clientHeight:window.innerHeight,    //窗口高度

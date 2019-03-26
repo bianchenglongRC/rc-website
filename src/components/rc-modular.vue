@@ -1,7 +1,7 @@
 <template>
-  <section class="modular-wrap">
+  <section class="layout">
 
-    <div class="layout">
+    <div class="layout-warp">
 
       <h1 class="all-title" ref="modularTitle" :class="modularObj.title==true?'rc-fadeinB':''">Fusing modern technology with classic romance <br/>for everyone worldwide</h1>
 

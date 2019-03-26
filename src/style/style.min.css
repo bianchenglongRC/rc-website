@@ -1,10 +1,20 @@
+/*
+* style
+* 公共css样式单
+*/
 
-li{list-style-type:none}
-a{text-decoration: none}
+/*all ======================================================*/
 .page-lauout{ position: relative;width:100%}
-.layout{width: 1200px;margin:0 auto; position: relative}
+.layout{overflow: hidden;width:100%; position: relative}
+.layout-warp{width: 1200px;margin:0 auto; position: relative}
 .layer{width:750px;margin:0 auto;}
 .all-title{width:100%; text-align: center;font-size: 26px;}
+li{list-style-type:none}
+a{text-decoration: none}
+.rc-main-head{height:60px;padding-left:35px; line-height:60px;font-size: 40px;margin:0px}
+.rc-main-head:before{content: ''; position: absolute;left:0px;top:4px; width:14px;height:45px;background: #7100E6;}
+.rc-main-head b{float:left;font-weight: bold}
+.rc-main-head p{float:left;margin:0 0 0 8px;font-weight: 400}
 
 /*banner ====================================================*/
 .banner-container{width:100%;height:760px; overflow: hidden}
@@ -29,8 +39,7 @@ a{text-decoration: none}
 }
 
 /*modular ===================================================*/
-.modular-wrap{overflow: hidden;width:100%; position: relative}
-.modular-wrap .all-title{margin:40px 0}
+.all-title{margin:40px 0}
 .all-list-layer{ position: relative;width:100%; overflow: hidden;margin-bottom: 40px}
 .all-list-layer ul{float:left;width:1212px;margin:0px;padding:0px;}
 .all-list-layer li{float:left;width:594px;height:445px;margin-right: 12px;margin-bottom:12px; position: relative;overflow: hidden;}
@@ -44,3 +53,43 @@ a{text-decoration: none}
 .all-list-layer li:hover .all-list-title{transform:translateY(-200px); opacity: 0;}
 .all-list-desc{opacity: 0;line-height: 40px;margin-top: 100px;}
 .all-list-layer li:hover .all-list-desc{opacity: 1;transform:translateY(-220px);transition-delay:.15s}
+
+
+/*history ====================================================*/
+.rc-main-history{width:100%; position: relative;height:650px;margin-bottom: 115px; background: url("../assets/rc_rocket.jpg") no-repeat center 35px;border-left:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.15)}
+.rc-all-title{ position: absolute;left:30px;top:-4px}
+.rc-file {fill: #702ade;}
+.rc-file, .rc-even {fill-rule: evenodd;}
+.rc-stroke, .rc-even {fill: #fff;stroke: #702ade;stroke-width: 4.167px;}
+
+.is-revealed circle,.is-revealed path{animation: offset .5s linear forwards;}
+.is-revealed circle{stroke-dasharray: 85px;stroke-dashoffset:85}
+.is-revealed .path-1 circle{animation: offset .5s linear forwards;}
+.is-revealed .path-2 path{stroke-dasharray: 100px;stroke-dashoffset:100;animation-delay: .4s}
+.is-revealed .path-3 circle,.is-revealed .delay_in_1,.is-revealed .delay_time_1{animation-delay: .8s}
+.is-revealed .path-4 path{stroke-dasharray: 100px;stroke-dashoffset:100;animation-delay: 1.2s}
+.is-revealed .path-5 path,.is-revealed .delay_time_2{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 1.6s}
+.is-revealed .path-6 path{stroke-dasharray: 100px;stroke-dashoffset:100;animation-delay: 2s}
+.is-revealed .path-7 circle,.is-revealed .delay_time_3{animation-delay: 2.4s}
+.is-revealed .path-8 path{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 2.8s}
+.is-revealed .path-9 circle{animation-delay: 3.2s}
+.is-revealed .path-10 path,.is-revealed .delay_time_4{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 3.6s}
+.is-revealed .path-11 path{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 4s}
+.is-revealed .path-12 path,.is-revealed .delay_time_5{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 4.4s}
+.is-revealed .path-13 path{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 4.8s}
+.is-revealed .path-14 path,.is-revealed .delay_time_6{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 5.2s}
+.is-revealed .path-15 path{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 5.6s}
+.is-revealed .path-16 path,.is-revealed .delay_time_7{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 6s}
+.is-revealed .path-17 circle{animation-delay: 6.4s}
+.is-revealed .path-18 path,.is-revealed .delay_time_8{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 6.8s}
+.is-revealed .path-19 circle{animation-delay: 7.2s}
+@keyframes offset {  to { stroke-dashoffset: 0; } }
+.rc-main-pro{width:100%;height:100%; position:absolute;left: 0px;top:0px}
+.path-info{ position: absolute; line-height: 19px;}
+.rc-info-1{ bottom: 28px;left:50px;}
+.rc-info-2{ bottom: 140px;left:105px;}
+.rc-main-time{ position:absolute;bottom:-50px;left:0px; padding-left:30px}
+.rc-main-time span{float:left;font-size:20px; font-weight: bold; line-height: 30px;padding:0 31px}
+.rc-main-time span.rc-mar1{padding:0 45px 0 25px}
+.rc-main-time span.rc-mar2{padding:0 35px 0 27px}
+.rc-main-time span.rc-mar3{padding:0 38px 0 24px}

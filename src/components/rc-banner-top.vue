@@ -4,7 +4,7 @@
 
     <div class="banner-box style rc-fadeinB">
 
-      <div class="layout">
+      <div class="layout-warp">
 
         <!--s: logo-->
         <Logo></Logo>

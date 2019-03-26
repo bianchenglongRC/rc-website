@@ -1,12 +1,58 @@
 
-.rc-fadeinB,.rc-fadeinL{-webkit-animation:.5s ease-out backwards;-moz-animation:.5s ease-out backwards;-ms-animation:.5s ease-out backwards;animation:.5s ease-out backwards;}
+.rc-fadein,.rc-fadeinT,.rc-fadeinB,.rc-fadeinL,.rc-rotatein{-webkit-animation:.5s ease-out backwards;-moz-animation:.5s ease-out backwards;-ms-animation:.5s ease-out backwards;animation:.5s ease-out backwards;}
 
+/* 淡入 */
+.rc-fadein{-webkit-animation-name:fadein;-moz-animation-name:fadein;-ms-animation-name:fadein;animation-name:fadein;}
+
+/* 淡入-从上 */
+.rc-fadeinT{-webkit-animation-name:fadeinT;-moz-animation-name:fadeinT;-ms-animation-name:fadeinT;animation-name:fadeinT;}
 
 /* 淡入-从下 */
 .rc-fadeinB{-webkit-animation-name:fadeinB;-moz-animation-name:fadeinB;-ms-animation-name:fadeinB;animation-name:fadeinB;}
 
 /* 淡入-从左 */
 .rc-fadeinL{-webkit-animation-name:fadeinL;-moz-animation-name:fadeinL;-ms-animation-name:fadeinL;animation-name:fadeinL;}
+
+/* 转入 */
+.rc-rotatein{-webkit-animation-name:rotatein;-moz-animation-name:rotatein;-ms-animation-name:rotatein;animation-name:rotatein;}
+
+
+
+/* 淡入 */
+@-webkit-keyframes fadein{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+@-moz-keyframes fadein{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+@-ms-keyframes fadein{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+@keyframes fadein{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+
+/* 淡入-从上 */
+@-webkit-keyframes fadeinT{
+  0%{opacity:0;-webkit-transform:translateY(-100px);}
+  100%{opacity:1;-webkit-transform:translateY(0);}
+}
+@-moz-keyframes fadeinT{
+  0%{opacity:0;-moz-transform:translateY(-100px);}
+  100%{opacity:1;-moz-transform:translateY(0);}
+}
+@-ms-keyframes fadeinT{
+  0%{opacity:0;-ms-transform:translateY(-100px);}
+  100%{opacity:1;-ms-transform:translateY(0);}
+}
+@keyframes fadeinT{
+  0%{opacity:0;transform:translateY(-100px);}
+  100%{opacity:1;transform:translateY(0);}
+}
 
 /* 淡入-从下 */
 @-webkit-keyframes fadeinB{
@@ -43,6 +89,25 @@
   0%{opacity:0;transform:translateX(-100px);}
   100%{opacity:1;transform:translateX(0);}
 }
+
+/* 转入 */
+@-webkit-keyframes rotatein{
+  0%{opacity:0;-webkit-transform:rotate(-200deg);}
+  100%{opacity:1;-webkit-transform:rotate(0);}
+}
+@-moz-keyframes rotatein{
+  0%{opacity:0;-moz-transform:rotate(-200deg);}
+  100%{opacity:1;-moz-transform:rotate(0);}
+}
+@-ms-keyframes rotatein{
+  0%{opacity:0;-ms-transform:rotate(-200deg);}
+  100%{opacity:1;-ms-transform:rotate(0);}
+}
+@keyframes rotatein{
+  0%{opacity:0;transform:rotate(-200deg);}
+  100%{opacity:1;transform:rotate(0);}
+}
+
 .delay_1{
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
