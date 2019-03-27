@@ -1,5 +1,5 @@
 
-.rc-fadein,.rc-fadeinT,.rc-fadeinB,.rc-fadeinL,.rc-rotatein{-webkit-animation:.5s ease-out backwards;-moz-animation:.5s ease-out backwards;-ms-animation:.5s ease-out backwards;animation:.5s ease-out backwards;}
+.rc-fadein,.rc-fadeinT,.rc-fadeinB,.rc-fadeinL,.rc-fadeinR,.rc-rotatein{-webkit-animation:.5s ease-out backwards;-moz-animation:.5s ease-out backwards;-ms-animation:.5s ease-out backwards;animation:.5s ease-out backwards;}
 
 /* 淡入 */
 .rc-fadein{-webkit-animation-name:fadein;-moz-animation-name:fadein;-ms-animation-name:fadein;animation-name:fadein;}
@@ -12,6 +12,9 @@
 
 /* 淡入-从左 */
 .rc-fadeinL{-webkit-animation-name:fadeinL;-moz-animation-name:fadeinL;-ms-animation-name:fadeinL;animation-name:fadeinL;}
+
+/* 淡入-从右 */
+.rc-fadeinR{-webkit-animation-name:fadeinR;-moz-animation-name:fadeinR;-ms-animation-name:fadeinR;animation-name:fadeinR;}
 
 /* 转入 */
 .rc-rotatein{-webkit-animation-name:rotatein;-moz-animation-name:rotatein;-ms-animation-name:rotatein;animation-name:rotatein;}
@@ -87,6 +90,24 @@
 }
 @keyframes fadeinL{
   0%{opacity:0;transform:translateX(-100px);}
+  100%{opacity:1;transform:translateX(0);}
+}
+
+/* 淡入-从右 */
+@-webkit-keyframes fadeinR{
+  0%{opacity:0;-webkit-transform:translateX(100px);}
+  100%{opacity:1;-webkit-transform:translateX(0);}
+}
+@-moz-keyframes fadeinR{
+  0%{opacity:0;-moz-transform:translateX(100px);}
+  100%{opacity:1;-moz-transform:translateX(0);}
+}
+@-ms-keyframes fadeinR{
+  0%{opacity:0;-ms-transform:translateX(100px);}
+  100%{opacity:1;-ms-transform:translateX(0);}
+}
+@keyframes fadeinR{
+  0%{opacity:0;transform:translateX(100px);}
   100%{opacity:1;transform:translateX(0);}
 }
 

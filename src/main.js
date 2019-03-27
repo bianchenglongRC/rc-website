@@ -5,6 +5,7 @@ import App from './App'
 
 import router from './router'
 
+import "./style/icon.min.css"
 import "./style/animation.css"
 import "./style/style.min.css"
 

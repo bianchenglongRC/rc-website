@@ -12,7 +12,15 @@
     <!--e: modular-->
 
     <!--s: history-->
-    <History></History>
+    <History ref="myHistorychild" v-on:historyFun="historyFun"></History>
+    <!--e: history-->
+
+    <!--s: RcModuleWrap-->
+    <RcModuleWrap ref="myModulechild" v-on:moduleFun="moduleFun"></RcModuleWrap>
+    <!--e: RcModuleWrap-->
+
+    <!--s: history ref="myServeschild" v-on:historyFun="historyFun"-->
+    <Serves></Serves>
     <!--e: history-->
 
 
@@ -23,13 +31,17 @@
   import Banner from '@/components/rc-banner-top'
   import Modular from '@/components/rc-modular'
   import History from '@/components/rc-history'
+  import RcModuleWrap from '@/components/rc-module-wrap'
+  import Serves from '@/components/rc-serve'
   export default {
     name: 'app',
-    components:{ Banner,Modular,History },
+    components:{ Banner,Modular,History,RcModuleWrap,Serves },
     data () {
       return {
         clientHeight:window.innerHeight,    //窗口高度
         modularObj:{},
+        historyKey:'',
+        moduleKey:'',
         layoutTop:'',
       }
     },
@@ -49,9 +61,25 @@
            modularObj = {"title":true,"liT":true,"liB":true}
         }
         this.$refs.myModularchild.parentModularClick(modularObj)
+        if(scrollTop>this.historyKey+this.layoutTop-this.clientHeight){
+          this.$refs.myHistorychild.parentHistoryClick(true)
+        }else{
+          this.$refs.myHistorychild.parentHistoryClick(false)
+        }
+        if(scrollTop>this.moduleKey+this.layoutTop-this.clientHeight){
+          this.$refs.myModulechild.parentModuleClick(true)
+        }else{
+          this.$refs.myModulechild.parentModuleClick(false)
+        }
       },
       modularFun(obj){
         this.modularObj = obj
+      },
+      historyFun(key){
+        this.historyKey = key
+      },
+      moduleFun(key){
+        this.moduleKey = key
       }
     },
     mounted () {

@@ -1,0 +1,47 @@
+.rc-icon{ background-image: url("../assets/rc-icon.png"); background-repeat: no-repeat; background-size: cover}
+
+.rc-flag{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+}
+.rc-flag:before {
+  content: "\00a0";
+}
+.rc-flag-icon-sa {
+  background-image: url(../assets/flags/sa.svg);
+}
+.rc-flag-icon-tr {
+  background-image: url(../assets/flags/tr.svg);
+}
+.rc-flag-icon-es {
+  background-image: url(../assets/flags/es.svg);
+}
+.rc-flag-icon-se {
+  background-image: url(../assets/flags/se.svg);
+}
+.rc-flag-icon-be {
+  background-image: url(../assets/flags/be.svg);
+}
+.rc-flag-icon-nl {
+  background-image: url(../assets/flags/nl.svg);
+}
+.rc-flag-icon-gb {
+  background-image: url(../assets/flags/gb.svg);
+}
+.rc-flag-icon-fr {
+  background-image: url(../assets/flags/fr.svg);
+}
+.rc-flag-icon-de {
+  background-image: url(../assets/flags/de.svg);
+}
+.rc-flag-icon-it {
+  background-image: url(../assets/flags/it.svg);
+}
+.rc-flag-icon-br {
+  background-image: url(../assets/flags/br.svg);
+}
+.rc-flag-icon-in {
+  background-image: url(../assets/flags/in.svg);
+}

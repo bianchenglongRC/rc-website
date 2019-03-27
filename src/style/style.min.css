@@ -8,13 +8,16 @@
 .layout{overflow: hidden;width:100%; position: relative}
 .layout-warp{width: 1200px;margin:0 auto; position: relative}
 .layer{width:750px;margin:0 auto;}
+.rc-serves{width:1140px;margin:0 auto;}
 .all-title{width:100%; text-align: center;font-size: 26px;}
+.desc-right{ text-align: right}
 li{list-style-type:none}
 a{text-decoration: none}
 .rc-main-head{height:60px;padding-left:35px; line-height:60px;font-size: 40px;margin:0px}
 .rc-main-head:before{content: ''; position: absolute;left:0px;top:4px; width:14px;height:45px;background: #7100E6;}
 .rc-main-head b{float:left;font-weight: bold}
 .rc-main-head p{float:left;margin:0 0 0 8px;font-weight: 400}
+.all-bg{background: #7100E6}
 
 /*banner ====================================================*/
 .banner-container{width:100%;height:760px; overflow: hidden}
@@ -24,7 +27,6 @@ a{text-decoration: none}
 .center-header{padding-top:280px;color:#fff; text-align: center}
 .center-header h1{ font-weight: bold; font-size: 40px;margin:0}
 .banner-desc{font-size: 26px;margin-top:15px}
-.desc-right{ text-align: right}
 .banner-link-btn{width:100%; text-align: center;padding-top:20px;}
 .banner-link-btn a{margin:0 15px;color:#fff; font-size: 18px;text-align: center; display:inline-block;border-radius: 30px;transition:.2s ease-out}
 .common-learn{ background: #7100E6;width:180px;line-height:60px;}
@@ -56,40 +58,163 @@ a{text-decoration: none}
 
 
 /*history ====================================================*/
-.rc-main-history{width:100%; position: relative;height:650px;margin-bottom: 115px; background: url("../assets/rc_rocket.jpg") no-repeat center 35px;border-left:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.15)}
+.rc-main-history{width:100%; position: relative;height:650px;margin-bottom: 45px; background: url("../assets/rc_rocket.jpg") no-repeat center 35px;border-left:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.15)}
 .rc-all-title{ position: absolute;left:30px;top:-4px}
 .rc-file {fill: #702ade;}
 .rc-file, .rc-even {fill-rule: evenodd;}
-.rc-stroke, .rc-even {fill: #fff;stroke: #702ade;stroke-width: 4.167px;}
+.rc-stroke, .rc-even {fill: #fff;stroke: #702ade;stroke-width: 3.167px;}
 
-.is-revealed circle,.is-revealed path{animation: offset .5s linear forwards;}
+.is-revealed circle,.is-revealed path{animation: offset .3s linear forwards;}
 .is-revealed circle{stroke-dasharray: 85px;stroke-dashoffset:85}
-.is-revealed .path-1 circle{animation: offset .5s linear forwards;}
-.is-revealed .path-2 path{stroke-dasharray: 100px;stroke-dashoffset:100;animation-delay: .4s}
-.is-revealed .path-3 circle,.is-revealed .delay_in_1,.is-revealed .delay_time_1{animation-delay: .8s}
-.is-revealed .path-4 path{stroke-dasharray: 100px;stroke-dashoffset:100;animation-delay: 1.2s}
-.is-revealed .path-5 path,.is-revealed .delay_time_2{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 1.6s}
-.is-revealed .path-6 path{stroke-dasharray: 100px;stroke-dashoffset:100;animation-delay: 2s}
-.is-revealed .path-7 circle,.is-revealed .delay_time_3{animation-delay: 2.4s}
-.is-revealed .path-8 path{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 2.8s}
-.is-revealed .path-9 circle{animation-delay: 3.2s}
-.is-revealed .path-10 path,.is-revealed .delay_time_4{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 3.6s}
-.is-revealed .path-11 path{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 4s}
-.is-revealed .path-12 path,.is-revealed .delay_time_5{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 4.4s}
-.is-revealed .path-13 path{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 4.8s}
-.is-revealed .path-14 path,.is-revealed .delay_time_6{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 5.2s}
-.is-revealed .path-15 path{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 5.6s}
-.is-revealed .path-16 path,.is-revealed .delay_time_7{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 6s}
-.is-revealed .path-17 circle{animation-delay: 6.4s}
-.is-revealed .path-18 path,.is-revealed .delay_time_8{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 6.8s}
-.is-revealed .path-19 circle{animation-delay: 7.2s}
+.is-revealed .path-1 circle{animation: offset .3s linear forwards;}
+.is-revealed .path-2 path{stroke-dasharray: 100px;stroke-dashoffset:100;animation-delay: .3s}
+.is-revealed .path-3 circle,.is-revealed .delay_in_1{animation-delay: .6s}
+.is-revealed .path-4 path{stroke-dasharray: 100px;stroke-dashoffset:100;animation-delay: .9s}
+.is-revealed .path-5 circle,.is-revealed .delay_in_2{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 1.2s}
+.is-revealed .path-6 path{stroke-dasharray: 190px;stroke-dashoffset:190;animation-delay: 1.5s}
+.is-revealed .path-7 circle,.is-revealed .delay_in_3{animation-delay: 1.8s}
+.is-revealed .path-8 path{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 2.1s}
+.is-revealed .path-9 circle,.is-revealed .delay_in_4{animation-delay: 2.4s}
+.is-revealed .path-10 path{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 2.7s}
+.is-revealed .path-11 circle,.is-revealed .delay_in_5{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 3s}
+.is-revealed .path-12 path{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 3.3s}
+.is-revealed .path-13 circle,.is-revealed .delay_in_6{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 3.6s}
+.is-revealed .path-14 path{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 3.9s}
+.is-revealed .path-15 circle,.is-revealed .delay_in_7{stroke-dasharray: 85px;stroke-dashoffset:85;animation-delay: 4.2s}
+.is-revealed .path-16 path{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 4.5s}
+.is-revealed .path-17 circle,.is-revealed .delay_in_8{animation-delay: 4.8s}
+.is-revealed .path-18 path{stroke-dasharray: 200px;stroke-dashoffset:200;animation-delay: 5.1s}
+.is-revealed .path-19 circle,.is-revealed .delay_in_9{animation-delay: 5.4s}
 @keyframes offset {  to { stroke-dashoffset: 0; } }
 .rc-main-pro{width:100%;height:100%; position:absolute;left: 0px;top:0px}
 .path-info{ position: absolute; line-height: 19px;}
-.rc-info-1{ bottom: 28px;left:50px;}
-.rc-info-2{ bottom: 140px;left:105px;}
+.rc-2014{ bottom: 28px;left:50px;}
+.rc-2015{ bottom: 140px;left:105px;}
+.rc-2016{ bottom: 26px;left:280px;}
+.rc-1H2017{bottom: 170px;left:380px;}
+.rc-icon-lovu{float:left;width:30px;height:30px; background-position: 0px 0px;}
+.rc-icon-chat{float:left;width:30px;height:30px; background-position: 0px -30px;}
+.rc-place{ display: block}
+.rc-2016 p{float:left;width:160px;margin:5px 0;padding-left:2px}
+.rc-1H2017 h1,.rc-millions h1{color: #7000de; font-size: 22px;margin: 0}
+.rc-1H2017 p,.rc-millions p{margin:0}
+.rc-2H2017{bottom: 75px;left:515px;width:150px}
+.rc-1Q2018{bottom: 260px;left:580px;width:170px}
+.rc-2Q2018{bottom: 220px;right:205px;width:170px}
+.rc-3Q2018{top: 170px;right:240px;}
+.rc-4Q2018{top: 185px;right:45px;}
+.rc-millions{top: 50px;right:120px;}
+.rc-icon-cup{float:left;width:25px;height:42px;background-position: 0px -71px;margin-right:8px}
+.rc-icon-title{float:left;margin:0px; font-weight: bold;width:100px;font-size: 18px}
+.rc-icon-path{float:left;margin-top:4px;}
+.rc-icon-path span{width:27px;height:19px;float:left;margin-right:5px}
+.rc-3Q2018 .rc-icon-title,.rc-4Q2018 .rc-icon-title{width:75px;margin-top: 15px}
+.rc-3Q2018 .rc-icon-path,.rc-4Q2018 .rc-icon-path{margin-top:15px}
+.rc-4Q2018 .rc-icon-title{width:50px;margin-top: 15px;color:#7000de; font-weight: bold}
+.rc-4Q2018:before{content: '*'; position: absolute; right:-4px;top:2px; color:#FF3D8A; font-weight: bold; font-size: 20px}
+.rc-main-cue{color:#ff4189; line-height: 30px; position: absolute; right:0px;bottom: 5px}
+.rc-main-cue:before{content: '*'; position: absolute; left:-6px;top:0px; color:#FF3D8A;}
 .rc-main-time{ position:absolute;bottom:-50px;left:0px; padding-left:30px}
 .rc-main-time span{float:left;font-size:20px; font-weight: bold; line-height: 30px;padding:0 31px}
 .rc-main-time span.rc-mar1{padding:0 45px 0 25px}
-.rc-main-time span.rc-mar2{padding:0 35px 0 27px}
+.rc-main-time span.rc-mar2{padding:0 40px 0 22px}
 .rc-main-time span.rc-mar3{padding:0 38px 0 24px}
+
+/*rc-module-wrap ==============================================*/
+.main-warp{margin:60px 0;height:95px;padding:45px 0}
+.warp-header{width:800px; margin: 0 auto; color: #fff; text-align: center}
+.warp-header h1{ font-weight: bold; font-size: 26px;margin:0}
+.warp-desc{font-size: 18px;margin-top:15px;margin:4px 0}
+
+/*serves ======================================================*/
+.rc-main-serve-head{ position: relative}
+.rc-main-head-info{font-size: 16px}
+.rc-serve-map{position: relative;width:100%; text-align: center;padding:30px 0 40px}
+.rc-serve-bar{width:100%px; position: absolute;top:0px;left:0px}
+.rc-serve-lovu{float:left;width:40px;height:40px; background-position: 0px 0px;margin-right:2px}
+.rc-serve-chat{float:left;width:40px;height:40px; background-position: 0px -40px;}
+.point-area{transition:opacity 0.5s ease-out; position: absolute;}
+.flags-gb{width:80px;height:80px;left:75px;top:175px}
+.flags-se{width:100px;height:100px;left:170px;top:120px}
+.flags-de{width:200px;height:200px;left:88px;top:125px}
+.flags-es{width:120px;height:120px;left:62px;top:235px}
+.flags-fr{width:140px;height:140px;left:80px;top:185px}
+.serve-flags{ position: absolute; top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; z-index:1;width:25px;height:25px;border-radius: 100%;border:1px solid rgba(255,255,255,.6);    background-clip: padding-box; background-size: cover; background-position: -4px 0px;}
+.point-area .point{width:100%;height:100%; position: absolute;top:0px;left:0px;border-radius: 50%;background-clip: padding-box;background: transparent;}
+.point-area .point-10:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid #C798F7;
+  opacity: 0;
+  -webkit-animation: ripple 4500ms ease-out 225ms infinite;
+  -moz-animation: ripple 4500ms ease-out 225ms infinite;
+  -o-animation: ripple 4500ms ease-out 225ms infinite;
+  animation: ripple 4500ms ease-out 225ms infinite;
+}
+.point-area .point-40:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid #C798F7;
+  opacity: 0;
+  -webkit-animation: ripple 4500ms ease-out 900ms infinite;
+  -moz-animation: ripple 4500ms ease-out 900ms infinite;
+  -o-animation: ripple 4500ms ease-out 900ms infinite;
+  animation: ripple 4500ms ease-out 900ms infinite;
+}
+.point-area .point-70:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid #C798F7;
+  opacity: 0;
+  -webkit-animation: ripple 4500ms ease-out 1575ms infinite;
+  -moz-animation: ripple 4500ms ease-out 1575ms infinite;
+  -o-animation: ripple 4500ms ease-out 1575ms infinite;
+  animation: ripple 4500ms ease-out 1575ms infinite;
+}
+.point-area .point-80:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid #C798F7;
+  opacity: 0;
+  -webkit-animation: ripple 4500ms ease-out 1800ms infinite;
+  -moz-animation: ripple 4500ms ease-out 1800ms infinite;
+  -o-animation: ripple 4500ms ease-out 1800ms infinite;
+  animation: ripple 4500ms ease-out 1800ms infinite;
+}
+.point-area .point-shadow:after {
+  -webkit-box-shadow: inset 0 0 5em rgba(113,0,230, 0.16);
+  -moz-box-shadow: inset 0 0 5em rgba(113,0,230, 0.16);
+  box-shadow: inset 0 0 5em rgba(113,0,230, 0.16);
+}
+@-webkit-keyframes ripple{ 0%{opacity:0;-webkit-transform:scale(0.1,0.1); } 5%{ opacity:1; }  100%{ opacity:0; -webkit-transform:scale(1)}}
+@-moz-keyframes ripple{ 0%{opacity:0;-moz-transform:scale(0.1,0.1); } 5%{ opacity:1; }  100%{ opacity:0; -moz-transform:scale(1)}}
+@-o-keyframes ripple{ 0%{opacity:0;-o-transform:scale(0.1,0.1); } 5%{ opacity:1; }  100%{ opacity:0; -o-transform:scale(1)}}
+@keyframes ripple{ 0%{opacity:0;-webkit-transform:scale(0.1,0.1);-moz-transform:scale(0.1,0.1);-ms-transform:scale(0.1,0.1);transform:scale(0.1,0.1); } 5%{ opacity:1; }  100%{ opacity:0;-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}
