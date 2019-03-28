@@ -19,9 +19,25 @@
     <RcModuleWrap ref="myModulechild" v-on:moduleFun="moduleFun"></RcModuleWrap>
     <!--e: RcModuleWrap-->
 
-    <!--s: history ref="myServeschild" v-on:historyFun="historyFun"-->
+    <!--s: Serves-->
     <Serves ref="myServechild" v-on:serveFun="serveFun"></Serves>
-    <!--e: history-->
+    <!--e: Serves-->
+
+    <!--s: Info-->
+    <Info ref="myInfochild" v-on:infoFun="infoFun"></Info>
+    <!--e: Info-->
+
+    <!--s: Matching-->
+    <Matching></Matching>
+    <!--e: Matching-->
+
+    <!--s: MatchingView-->
+    <MatchingView></MatchingView>
+    <!--e: MatchingView-->
+
+    <!--s: Footer-->
+    <Footer></Footer>
+    <!--e: Footer-->
 
 
   </div>
@@ -33,9 +49,14 @@
   import History from '@/components/rc-history'
   import RcModuleWrap from '@/components/rc-module-wrap'
   import Serves from '@/components/rc-serve'
+  import Info from '@/components/rc-info'
+  import Matching from '../components/rc-matching'
+  import MatchingView from '../components/rc-matching-view'
+  import Footer from '@/components/rc-footer'
+
   export default {
     name: 'app',
-    components:{ Banner,Modular,History,RcModuleWrap,Serves },
+    components:{ Banner,Modular,History,RcModuleWrap,Serves,Info,Matching,MatchingView,Footer },
     data () {
       return {
         clientHeight:window.innerHeight,    //窗口高度
@@ -44,12 +65,14 @@
         moduleKey:'',
         serveKey:'',
         layoutTop:'',
+        infoObj:{}
       }
     },
     methods:{
       handleScroll () {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
         let modularObj={};
+        let infoObj={};
         if(scrollTop>this.modularObj.title+this.layoutTop-this.clientHeight){
            modularObj = {"title":true,"liT":false,"liB":false}
         }else{
@@ -77,6 +100,15 @@
         }else{
           this.$refs.myServechild.parentServeClick(false)
         }
+        if(scrollTop>this.infoObj.infoTop+this.layoutTop-this.clientHeight){
+          infoObj = {"infoTop":true,"chatTop":false}
+        }else{
+          infoObj = {"infoTop":false,"chatTop":false}
+        }
+        if(scrollTop>this.infoObj.chatTop+this.layoutTop-this.clientHeight){
+          infoObj = {"infoTop":true,"chatTop":true}
+        }
+        this.$refs.myInfochild.parentInfoClick(infoObj)
       },
       modularFun(obj){
         this.modularObj = obj
@@ -89,7 +121,10 @@
       },
       serveFun(key){
         this.serveKey = key
-      }
+      },
+      infoFun(obj){
+        this.infoObj = obj
+      },
     },
     mounted () {
       let _this = this;

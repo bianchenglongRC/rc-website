@@ -129,7 +129,7 @@ a{text-decoration: none}
 /*serves ======================================================*/
 .rc-main-serve-head{ position: relative}
 .rc-main-head-info{font-size: 16px}
-.rc-serve-map{position: relative;width:100%; text-align: center;padding:30px 0 40px}
+.rc-serve-map{position: relative;width:100%;height:671px; text-align: center;padding:30px 0 60px}
 .rc-serve-bar{width:100%px; position: absolute;top:0px;left:0px}
 .rc-serve-lovu{float:left;width:40px;height:40px; background-position: 0px 0px;margin-right:2px}
 .rc-serve-chat{float:left;width:40px;height:40px; background-position: 0px -40px;}
@@ -162,3 +162,68 @@ a{text-decoration: none}
 .flags-jp{width:110px;height:110px;right:270px;top:265px}
 .serve-flags{ position: absolute; top: 0;left: 0;right: 0;bottom: 0;margin: auto; z-index:1;width:25px;height:25px;border-radius: 100%;border:1px solid #f1f1f1;background-clip: padding-box; background-size: cover; background-position: -4px 0px;}
 .point-area .point{width:100%;height:100%; position: absolute;top:0px;left:0px;border-radius: 50%;background-clip: padding-box;background: transparent;}
+
+
+/*info ===========================================================*/
+.all-info-warp{float:left;width:100%;position: relative;}
+.rc-info-chat{float:right;width:470px;height:630px; position: relative}
+.rc-info-title{ position: absolute;left: 5px;top:10px}
+.rc-info-chat img{ position: absolute;box-shadow: 0 0 20px rgba(0,0,0,.8);border-radius: 40px}
+.rc-chat-l{ left: 0px; top: 70px; z-index: 2}
+.rc-chat-r{ left: 230px; top: 25px; z-index: 1}
+.rc-info-warp{float:left;width:600px;padding-top:115px}
+.all-info-title{width:100%; position: relative}
+.rc-info-lovu{float:left;width: 78px;height: 78px;background-position: 0px 0px;margin-right: 25px;}
+.rc-info-lovu-bg{float:left;width:120px;height:78px; background-image: url("../assets/rc-info-lovu.png"); background-repeat: no-repeat; background-size:contain; background-position: 0 10px}
+.rc-info{float:left;width:100%; line-height: 25px; font-size: 16px}
+.info-learn{float:left;border-radius: 30px;border:2px solid #7100E6;padding:0 28px;line-height: 45px;font-size: 16px; color: #7000de;margin-top:40px;}
+.rc-info-warp a{ -webkit-transition: .2s ease-out;transition: .2s ease-out;}
+.rc-info-warp a:hover{color: #fff; background: #7100E6}
+.rc-info-live{float:left;width: 78px;height: 78px;background-position: 0px -78px;margin-right: 25px;}
+.rc-info-live-bg{float:left;width:160px;height:78px; background-image: url("../assets/rc-info-live-chat.png"); background-repeat: no-repeat; background-size:contain; background-position: 0 25px}
+
+
+/* matching view ==================================================*/
+.rc-matching{width:650px;height:650px; position: relative;margin:0 273px 120px}
+.rc-matching:before{content: ''; position: absolute;left:0px;top:0px;border:1px solid #e5e5e5;width:649px;height:649px;border-radius: 100%}
+.rc-motion-out{ position: absolute;width:540px;height:540px;left:55px;top:55px; background: url("../assets/rc-layer-bg1.png") no-repeat;}
+.rc-motion-cen{ position: absolute;width:396px;height:396px; background: #fff;border-radius: 100%;left:127px;top:127px;box-shadow: 0 0 50px rgba(113,0,230, .4);}
+.rc-motion-cen i{ position: absolute;width:16px;height:16px;border-radius: 100%}
+.rc-motion-cen .motion-1{ background: #7100E6;left:190px;top:23px}
+.rc-motion-cen .motion-2{ width:14px;height:14px;left:38px;top:265px; border:1px solid #C798F7}
+.rc-motion-cen .motion-3{ width:14px;height:14px;right:38px;top:265px; border:1px solid #C798F7}
+.rc-motion-fan{ position: absolute;width:286px;height:286px;left:182px;top:182px; background-image: url("../assets/rc-layer-bg2.png"); background-repeat: no-repeat; background-size: cover;}
+.rc-motion-head{ position: absolute;width:138px;height:138px; left:256px;top:256px; background: #fff;border-radius: 100%}
+.rc-motion-head:before{ content: ''; position: absolute;width:100px;height:90px; left: 19px;top:24px; background-image: url("../assets/rc-icon.png"); background-repeat: no-repeat; background-size:cover; background-position: center -197px}
+.rc-motion-1{ position: absolute;left:20px; top:90px}
+.rc-motion-1 .infinite{width:65px;height:65px; padding: 10px; position: absolute;left: 0px; top:0px; background: rgba(113,0,230,.3); border-radius: 100%;}
+.rc-motion-1 .pulse-aim{width:65px;height:65px; border-radius: 100%; background: #7100E6; position: absolute;left: 10px; top:10px;}
+.rc-motion-1 .pulse-aim:before{ content: ''; position: absolute;width:45px;height:45px; left: 10px; top:10px;transition: all 300ms;background-image: url("../assets/rc-icon.png"); background-repeat: no-repeat; background-size: cover; background-position: center -205px}
+.rc-motion-1 .motion-title{ text-align: right; left: -245px;top:15px}
+.motion-title{ position: absolute;width:220px;}
+.motion-title p{ margin: 0; font-size: 18px; font-weight: bold}
+.rc-motion-2{ position: absolute;right:80px; top:115px}
+.rc-motion-2 .motion-title{ text-align: left; left: 80px;top:0px}
+.rc-motion-aim{width:30px;height:30px;padding: 10px; position: absolute;left: 0px; top:0px; background: rgba(113,0,230,.3); border-radius: 100%;}
+.rc-motion-aim:before{content: ''; position: absolute;width:30px;height:30px; border-radius: 100%; background: #7100E6; left: 10px; top:10px;}
+.rc-motion-3{ position: absolute;left:305px; bottom:25px}
+.rc-motion-3 .motion-title{ text-align: center; left: -85px;top:70px}
+.rc-index-bar{width:100%; position: relative;padding:20px 0 60px;float:left}
+.rc-index-bar .bar-list{ padding: 0px; margin:0px;float:left;}
+.rc-index-bar .bar-list li{width:291px;height:270px;float:left;box-shadow: 0 0 15px rgba(0,0,0,.1)}
+.rc-index-bar .bar-r{margin-right:12px}
+.rc-index-bar .bar-footer{float:left;width:100%;height:50px; background: #7100E6; text-align: center;font-size: 20px; line-height: 50px; color: #fff; font-weight: bold}
+
+
+/*footer =============================================================*/
+.footer-container{width:100%;height:560px; overflow: hidden}
+.footer-box{width:100%;height:510px; position: relative; background-image: url("../assets/footer-bg.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover}
+.footer-box:before{content: '';position: absolute;left:0px;top:0px;width:100%;height:100%; background: rgba(0,0,0,.75)}
+.footer-warp{width:100%;height:50px; background: #7100E6;text-align: center;font-size: 16px; line-height: 50px; color: #fff; }
+.footer-layer{width:1150px;margin:0 auto}
+.layer-box{width:100%; position: relative;padding-top:100px; color:#fff}
+.layer-title{position: relative;padding-left:20px;font-size: 28px; font-weight: bold; display: block;margin-bottom: 20px}
+.layer-title:before{ position: absolute;content: '';left:0px;top:5px;width:10px;height:25px; background: #7100E6}
+.layer-box p{line-height: 35px;margin:0px; font-size: 16px}
+.layer-box p.box-title{font-size: 18px; font-weight: bold}
+.layer-box p.box-par{margin-bottom: 20px}

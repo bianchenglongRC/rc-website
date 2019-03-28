@@ -146,7 +146,7 @@
           </div>
           <!--e: 4Q2018-->
 
-          <div class="rc-main-cue" :class="historyBol?'rc-fadein delay_in_9':''">Sources come from APPAnnie best-selling app ranking list (2017-2019)</div>
+          <div class="rc-main-cue" :class="historyBol?'rc-fadein delay_in_9':''">Sources from APPAnnie best-selling app ranking list (2017-2019)</div>
 
 
           <div class="rc-main-time">
