@@ -20,7 +20,7 @@
     <!--e: RcModuleWrap-->
 
     <!--s: history ref="myServeschild" v-on:historyFun="historyFun"-->
-    <Serves></Serves>
+    <Serves ref="myServechild" v-on:serveFun="serveFun"></Serves>
     <!--e: history-->
 
 
@@ -42,6 +42,7 @@
         modularObj:{},
         historyKey:'',
         moduleKey:'',
+        serveKey:'',
         layoutTop:'',
       }
     },
@@ -71,6 +72,11 @@
         }else{
           this.$refs.myModulechild.parentModuleClick(false)
         }
+        if(scrollTop>this.serveKey+this.layoutTop-this.clientHeight){
+          this.$refs.myServechild.parentServeClick(true)
+        }else{
+          this.$refs.myServechild.parentServeClick(false)
+        }
       },
       modularFun(obj){
         this.modularObj = obj
@@ -80,6 +86,9 @@
       },
       moduleFun(key){
         this.moduleKey = key
+      },
+      serveFun(key){
+        this.serveKey = key
       }
     },
     mounted () {

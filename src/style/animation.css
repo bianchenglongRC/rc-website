@@ -19,6 +19,12 @@
 /* 转入 */
 .rc-rotatein{-webkit-animation-name:rotatein;-moz-animation-name:rotatein;-ms-animation-name:rotatein;animation-name:rotatein;}
 
+/* 扩散 */
+.is-revealed .point-area .point-10:after {content: '';display: block;position: absolute;top: 0;right: 0;bottom: 0;left: 0;border-radius: 50%;border: 2px solid #C798F7;opacity: 0;-webkit-animation: ripple 4500ms ease-out 225ms infinite;-moz-animation: ripple 4500ms ease-out 225ms infinite;-o-animation: ripple 4500ms ease-out 225ms infinite;animation: ripple 4500ms ease-out 225ms infinite;}
+.is-revealed .point-area .point-40:after {content: '';display: block;position: absolute;top: 0;right: 0;bottom: 0;left: 0;border-radius: 50%;border: 2px solid #C798F7;opacity: 0;-webkit-animation: ripple 4500ms ease-out 900ms infinite;-moz-animation: ripple 4500ms ease-out 900ms infinite;-o-animation: ripple 4500ms ease-out 900ms infinite;animation: ripple 4500ms ease-out 900ms infinite;}
+.is-revealed .point-area .point-70:after {content: '';display: block;position: absolute;top: 0;right: 0;bottom: 0;left: 0;border-radius: 50%;border: 2px solid #C798F7;opacity: 0;-webkit-animation: ripple 4500ms ease-out 1575ms infinite;-moz-animation: ripple 4500ms ease-out 1575ms infinite;-o-animation: ripple 4500ms ease-out 1575ms infinite;animation: ripple 4500ms ease-out 1575ms infinite;}
+.is-revealed .point-area .point-80:after {content: '';display: block;position: absolute;top: 0;right: 0;bottom: 0;left: 0;border-radius: 50%;border: 2px solid #C798F7;opacity: 0;-webkit-animation: ripple 4500ms ease-out 1800ms infinite;-moz-animation: ripple 4500ms ease-out 1800ms infinite;-o-animation: ripple 4500ms ease-out 1800ms infinite;animation: ripple 4500ms ease-out 1800ms infinite;}
+.is-revealed .point-area .point-shadow:after {-webkit-box-shadow: inset 0 0 5em rgba(113,0,230, 0.16);-moz-box-shadow: inset 0 0 5em rgba(113,0,230, 0.16);box-shadow: inset 0 0 5em rgba(113,0,230, 0.16);}
 
 
 /* 淡入 */
@@ -128,6 +134,30 @@
   0%{opacity:0;transform:rotate(-200deg);}
   100%{opacity:1;transform:rotate(0);}
 }
+
+
+/* 扩散 */
+@-webkit-keyframes ripple{
+  0%{opacity:0;-webkit-transform:scale(0.1,0.1); }
+  5%{ opacity:1; }
+  100%{ opacity:0; -webkit-transform:scale(1)}
+}
+@-moz-keyframes ripple{
+  0%{opacity:0;-moz-transform:scale(0.1,0.1); }
+  5%{ opacity:1; }
+  100%{ opacity:0; -moz-transform:scale(1)}
+}
+@-o-keyframes ripple{
+  0%{opacity:0;-o-transform:scale(0.1,0.1); }
+  5%{ opacity:1; }
+  100%{ opacity:0; -o-transform:scale(1)}
+}
+@keyframes ripple{
+  0%{opacity:0;-webkit-transform:scale(0.1,0.1);-moz-transform:scale(0.1,0.1);-ms-transform:scale(0.1,0.1);transform:scale(0.1,0.1); }
+  5%{ opacity:1; }
+  100%{ opacity:0;-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}
+}
+
 
 .delay_1{
   -webkit-animation-delay: 0.1s;
