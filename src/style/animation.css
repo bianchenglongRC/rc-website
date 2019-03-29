@@ -34,6 +34,11 @@
 /* 放大 */
 .is-revealed .pulse{animation: pulse 1s linear infinite;}
 
+/* 轨迹运动 */
+.is-revealed .bar-sin line{animation: hammer 1.5s infinite cubic-bezier(0.18, 0.89, 0.32, 3.28);stroke-dasharray: 55px;stroke-dashoffset:55;}
+.is-revealed .bar-roc line{animation: rocket 1s infinite cubic-bezier(0.18, 0.89, 0.32, 3.28);stroke-dasharray: 10px;stroke-dashoffset:10;}
+.is-revealed .bar-book line{animation: nodebook 1.5s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);stroke-dasharray: 35px;stroke-dashoffset:35px;}
+.is-revealed .bar-rec line{animation: recyclebin 1.5s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);stroke-dasharray: 40px;stroke-dashoffset:40px;}
 
 
 /* 淡入 */
@@ -199,6 +204,40 @@
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+  }
+}
+
+/* 轨迹运动 */
+@keyframes hammer {
+  0% {
+    stroke-dashoffset: 55;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes rocket {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 10;
+  }
+}
+@keyframes nodebook {
+  0% {
+    stroke-dashoffset: 35;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes recyclebin {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
 

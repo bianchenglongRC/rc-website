@@ -32,7 +32,7 @@
     <!--e: Matching-->
 
     <!--s: MatchingView-->
-    <MatchingView></MatchingView>
+    <MatchingView ref="myMatchingViewchild" v-on:matchViewFun="matchViewFun"></MatchingView>
     <!--e: MatchingView-->
 
     <!--s: Footer-->
@@ -65,7 +65,8 @@
         moduleKey:'',
         serveKey:'',
         layoutTop:'',
-        infoObj:{}
+        infoObj:{},
+        matchViewObj:{},
       }
     },
     methods:{
@@ -73,6 +74,7 @@
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
         let modularObj={};
         let infoObj={};
+        let matchViewObj={};
         if(scrollTop>this.modularObj.title+this.layoutTop-this.clientHeight){
            modularObj = {"title":true,"liT":false,"liB":false}
         }else{
@@ -109,6 +111,20 @@
           infoObj = {"infoTop":true,"chatTop":true}
         }
         this.$refs.myInfochild.parentInfoClick(infoObj)
+
+        if(scrollTop>this.matchViewObj.layoutTop+this.layoutTop-this.clientHeight){
+          matchViewObj = {"layoutTop":true,"layoutTitle":false,"layoutBar":false}
+        }else{
+          matchViewObj = {"layoutTop":false,"layoutTitle":false,"layoutBar":false}
+        }
+        if(scrollTop>this.matchViewObj.layoutTitle+this.layoutTop-this.clientHeight){
+          matchViewObj = {"layoutTop":true,"layoutTitle":true,"layoutBar":false}
+        }
+        if(scrollTop>this.matchViewObj.layoutBar+this.layoutTop-this.clientHeight){
+          matchViewObj = {"layoutTop":true,"layoutTitle":true,"layoutBar":true}
+        }
+        this.$refs.myMatchingViewchild.parentMatchingClick(matchViewObj)
+
       },
       modularFun(obj){
         this.modularObj = obj
@@ -125,6 +141,9 @@
       infoFun(obj){
         this.infoObj = obj
       },
+      matchViewFun(obj){
+        this.matchViewObj = obj
+      }
     },
     mounted () {
       let _this = this;

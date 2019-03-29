@@ -1,5 +1,5 @@
 .rc-icon{ background-image: url("../assets/rc-icon.png"); background-repeat: no-repeat; background-size: cover}
-
+.rc-match-icon{ background-image: url("../assets/match-ico.png");background-repeat: no-repeat; background-size: cover}
 .rc-flag{
   background-size: contain;
   background-repeat: no-repeat;
