@@ -6,7 +6,7 @@
 
       <h1 class="all-title" :class="matchViewObj.layoutTop?'rc-fadeinB':''">Our Core Departments work together to pay 100% attention to your digital well-being.</h1>
 
-      <div class="rc-matching">
+      <div class="rc-matching" :class="matchViewObj.layoutTop?'rc-fadeinB':''">
 
         <div class="rc-motion-out sec3"></div>
         <div class="rc-motion-cen sec6">
@@ -19,9 +19,8 @@
 
         <div class="rc-motion-1">
 
-          <div class="infinite pulse">
-            <i class="pulse-aim"></i>
-          </div>
+
+          <i class="rc-motion-aim pulse"></i>
 
           <div class="motion-title" :class="matchViewObj.layoutTop?'rc-fadeinL':''">
             <p>User Acquisition</p>

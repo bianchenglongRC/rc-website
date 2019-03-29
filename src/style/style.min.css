@@ -35,7 +35,7 @@ a{text-decoration: none}
 .common-view{border:2px solid #fff;width:176px;line-height:56px;}
 
 /*logo ======================================================*/
-.common-logo{ position: absolute;left: -160px; top:0px; width:120px;height:140px; background: url("../assets/rc_web_logo.png") no-repeat center 10px rgba(0,0,0,.67);}
+.common-logo{ position: absolute;left: -160px; top:0px; width:120px;height:140px; background-image: url("../assets/rc_web_logo.png"); background-repeat: no-repeat; background-position: center 10px; background-color: rgba(0,0,0,.67); background-size: 58% auto}
 .logo-text{ position: absolute;bottom:12px; left: 0px;width:100%; text-align: center; font-size: 12px; color: #fff;margin:0px}
 @media screen and (max-width: 1600px) {
   .common-logo{left: 0px; top:0px;}
@@ -93,8 +93,8 @@ a{text-decoration: none}
 .rc-2015{ bottom: 140px;left:105px;}
 .rc-2016{ bottom: 26px;left:280px;}
 .rc-1H2017{bottom: 170px;left:380px;}
-.rc-icon-lovu{float:left;width:30px;height:30px; background-position: 0px 0px;}
-.rc-icon-chat{float:left;width:30px;height:30px; background-position: 0px -30px;}
+.rc-icon-lovu{float:left;width:30px;height:30px; background-position: 0px 0px;margin-right: 2px}
+.rc-icon-chat{float:left;width:30px;height:30px; background-position: 0px -35px;}
 .rc-place{ display: block}
 .rc-2016 p{float:left;width:160px;margin:5px 0;padding-left:2px}
 .rc-1H2017 h1,.rc-millions h1{color: #7000de; font-size: 22px;margin: 0}
@@ -105,7 +105,7 @@ a{text-decoration: none}
 .rc-3Q2018{top: 170px;right:240px;}
 .rc-4Q2018{top: 185px;right:45px;}
 .rc-millions{top: 50px;right:120px;}
-.rc-icon-cup{float:left;width:25px;height:42px;background-position: 0px -71px;margin-right:8px}
+.rc-icon-cup{float:left;width:25px;height:42px;background-position: 0px -56px;margin-right:8px}
 .rc-icon-title{float:left;margin:0px; font-weight: bold;width:100px;font-size: 18px}
 .rc-icon-path{float:left;margin-top:4px;}
 .rc-icon-path span{width:27px;height:19px;float:left;margin-right:5px}
@@ -113,8 +113,8 @@ a{text-decoration: none}
 .rc-3Q2018 .rc-icon-path,.rc-4Q2018 .rc-icon-path{margin-top:15px}
 .rc-4Q2018 .rc-icon-title{width:50px;margin-top: 15px;color:#7000de; font-weight: bold}
 .rc-4Q2018:before{content: '*'; position: absolute; right:-4px;top:2px; color:#FF3D8A; font-weight: bold; font-size: 20px}
-.rc-main-cue{color:#ff4189; line-height: 30px; position: absolute; right:0px;bottom: 5px}
-.rc-main-cue:before{content: '*'; position: absolute; left:-6px;top:0px; color:#FF3D8A;}
+.rc-main-cue{color:#7100E6; line-height: 30px; position: absolute; right:0px;bottom: 5px}
+.rc-main-cue:before{content: '*'; position: absolute; left:-6px;top:0px; color:#7100E6;}
 .rc-main-time{ position:absolute;bottom:-50px;left:0px; padding-left:30px}
 .rc-main-time span{float:left;font-size:20px; font-weight: bold; line-height: 30px;padding:0 31px}
 .rc-main-time span.rc-mar1{padding:0 45px 0 25px}
@@ -132,8 +132,8 @@ a{text-decoration: none}
 .rc-main-head-info{font-size: 16px}
 .rc-serve-map{position: relative;width:100%;height:671px; text-align: center;padding:30px 0 60px}
 .rc-serve-bar{width:100%px; position: absolute;top:0px;left:0px}
-.rc-serve-lovu{float:left;width:40px;height:40px; background-position: 0px 0px;margin-right:2px}
-.rc-serve-chat{float:left;width:40px;height:40px; background-position: 0px -40px;}
+.rc-serve-lovu{float:left;width:40px;height:40px; background-position: 0px 0px;margin-right:5px}
+.rc-serve-chat{float:left;width:40px;height:40px; background-position: 0px -47px;}
 .point-area{transition:opacity 0.5s ease-out; position: absolute;}
 .flags-gb{width:80px;height:80px;left:75px;top:175px}
 .flags-se{width:100px;height:100px;left:170px;top:120px}
@@ -170,8 +170,8 @@ a{text-decoration: none}
 .rc-info-chat{float:right;width:470px;height:630px; position: relative}
 .rc-info-title{ position: absolute;left: 5px;top:10px}
 .rc-info-chat img{ position: absolute;box-shadow: 0 0 20px rgba(0,0,0,.8);border-radius: 40px}
-.rc-chat-l{ left: 0px; top: 70px; z-index: 2}
-.rc-chat-r{ left: 230px; top: 25px; z-index: 1}
+.rc-chat-l{ left: 0px; top: 70px; z-index: 2;width:265px}
+.rc-chat-r{ left: 230px; top: 25px; z-index: 1;width:240px}
 .rc-info-warp{float:left;width:600px;padding-top:115px}
 .all-info-title{width:100%; position: relative}
 .rc-info-lovu{float:left;width: 78px;height: 78px;background-position: 0px 0px;margin-right: 25px;}
@@ -180,9 +180,14 @@ a{text-decoration: none}
 .info-learn{float:left;border-radius: 30px;border:2px solid #7100E6;padding:0 28px;line-height: 45px;font-size: 16px; color: #7000de;margin-top:40px;}
 .rc-info-warp a{ -webkit-transition: .2s ease-out;transition: .2s ease-out;}
 .rc-info-warp a:hover{color: #fff; background: #7100E6}
-.rc-info-live{float:left;width: 78px;height: 78px;background-position: 0px -78px;margin-right: 25px;}
+.rc-info-live{float:left;width: 78px;height: 78px;background-position: 0px -92px;margin-right: 25px;}
 .rc-info-live-bg{float:left;width:160px;height:78px; background-image: url("../assets/rc-info-live-chat.png"); background-repeat: no-repeat; background-size:contain; background-position: 0 25px}
 
+/* matching =======================================================*/
+.layout-time{ position: absolute;width:100%; text-align: center; color: #fff;left:0px;top:0px;padding-top:145px}
+.layout-time-num{ font-size: 80px;font-weight: bold;margin: 0px}
+.layout-time-title{font-size: 60px; font-weight: bold;margin: 0px}
+.layout-time-info{ font-size:18px;padding:5px 40px;border-radius: 30px; border:2px solid #fff; position:relative;top:45px}
 
 /* matching view ==================================================*/
 .rc-matching{width:650px;height:650px; position: relative;margin:0 273px 120px}
@@ -195,20 +200,28 @@ a{text-decoration: none}
 .rc-motion-cen .motion-3{ width:14px;height:14px;right:38px;top:265px; border:1px solid #C798F7}
 .rc-motion-fan{ position: absolute;width:286px;height:286px;left:182px;top:182px; background-image: url("../assets/rc-layer-bg2.png"); background-repeat: no-repeat; background-size: cover;}
 .rc-motion-head{ position: absolute;width:138px;height:138px; left:256px;top:256px; background: #fff;border-radius: 100%}
-.rc-motion-head:before{ content: ''; position: absolute;width:100px;height:90px; left: 19px;top:24px; background-image: url("../assets/rc-icon.png"); background-repeat: no-repeat; background-size:cover; background-position: center -197px}
-.rc-motion-1{ position: absolute;left:20px; top:90px}
+.rc-motion-head:before{ content: ''; position: absolute;width:100px;height:90px; left: 19px;top:24px; background-image: url("../assets/rc-icon.png"); background-repeat: no-repeat; background-size:cover; background-position: center -398px}
+.rc-motion-1{ position: absolute;left:40px; top:125px}
+
 .rc-motion-1 .infinite{width:65px;height:65px; padding: 10px; position: absolute;left: 0px; top:0px; background: rgba(113,0,230,.3); border-radius: 100%;}
 .rc-motion-1 .pulse-aim{width:65px;height:65px; border-radius: 100%; background: #7100E6; position: absolute;left: 10px; top:10px;}
 .rc-motion-1 .pulse-aim:before{ content: ''; position: absolute;width:45px;height:45px; left: 10px; top:10px;transition: all 300ms;background-image: url("../assets/rc-icon.png"); background-repeat: no-repeat; background-size: cover; background-position: center -205px}
-.rc-motion-1 .motion-title{ text-align: right; left: -245px;top:15px}
+
+
+.rc-motion-1 .motion-title{ text-align: right; left: -265px;top:-8px}
 .motion-title{ position: absolute;width:220px;}
 .motion-title p{ margin: 0; font-size: 18px; font-weight: bold}
-.rc-motion-2{ position: absolute;right:80px; top:115px}
-.rc-motion-2 .motion-title{ text-align: left; left: 80px;top:0px}
-.rc-motion-aim{width:30px;height:30px;padding: 10px; position: absolute;left: 0px; top:0px; background: rgba(113,0,230,.3); border-radius: 100%;}
-.rc-motion-aim:before{content: ''; position: absolute;width:30px;height:30px; border-radius: 100%; background: #7100E6; left: 10px; top:10px;}
-.rc-motion-3{ position: absolute;left:305px; bottom:25px}
-.rc-motion-3 .motion-title{ text-align: center; left: -85px;top:70px}
+.rc-motion-2{ position: absolute;right:78px; top:120px}
+.rc-motion-2 .motion-title{ text-align: left; left: 80px;top:-8px}
+.rc-motion-aim{width:20px;height:20px;padding: 7px; position: absolute;left: 0px; top:0px; background: rgba(113,0,230,.3); border-radius: 100%;transition: all 300ms}
+.rc-motion-aim:before{content: '';width:100%;height:100%; border-radius: 100%; background-color: #7100E6; display: inline-block;}
+.rc-motion-aim:hover{width:45px;height:45px;padding: 14px;left:-20px;top:-16px; cursor:pointer;}
+.rc-motion-1 .rc-motion-aim:hover:before{background-image: url("../assets/motion-img1.png"); background-repeat: no-repeat; background-position: center center; background-size: 65% auto}
+.rc-motion-2 .rc-motion-aim:hover:before{background-image: url("../assets/motion-img2.png"); background-repeat: no-repeat; background-position: center center; background-size: 55% auto}
+.rc-motion-3 .rc-motion-aim:hover:before{background-image: url("../assets/motion-img3.png"); background-repeat: no-repeat; background-position: center center; background-size: 65% auto}
+
+.rc-motion-3{ position: absolute;left:305px; bottom:16px}
+.rc-motion-3 .motion-title{ text-align: center; left: -85px;top:60px}
 .rc-index-bar{width:100%; position: relative;padding:20px 0 60px;float:left}
 .rc-index-bar .bar-list{ padding: 0px; margin:0px;float:left;}
 .rc-index-bar .bar-list li{width:291px;height:270px;float:left;box-shadow: 0 0 15px rgba(0,0,0,.1)}
@@ -217,42 +230,11 @@ a{text-decoration: none}
 .rc-index-bar .bar-img{width:100px;height:100px;margin:50px 95px 0; display: block;}
 .rc-index-bar .bar-title{width:100%; line-height: 25px; font-size: 18px; font-weight: bold; text-align: center; display: block;padding-top:20px}
 .rc-index-bar .bar-sin{ background-position: -5px 0px}
-.rc-index-bar .bar-roc{background-position: 5px -125px}
-.rc-index-bar .bar-book{background-position: 5px -230px}
-.rc-index-bar .bar-rec{background-position: 0px -355px}
+.rc-index-bar .bar-roc{background-position: 5px -120px; }
+.rc-index-bar .bar-book{background-position: 5px -223px}
+.rc-index-bar .bar-rec{background-position: 0px -340px;}
 
-@keyframes hammer {
-  0% {
-    stroke-dashoffset: 55;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes rocket {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 10;
-  }
-}
-@keyframes nodebook {
-  0% {
-    stroke-dashoffset: 35;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes recyclebin {
-  0% {
-    stroke-dashoffset: 40;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
+
 
 /*footer =============================================================*/
 .footer-container{width:100%;height:560px; overflow: hidden}

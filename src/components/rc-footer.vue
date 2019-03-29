@@ -15,7 +15,7 @@
           <p class="box-title">Hong Kong, Global Headquarter</p>
           <p class="box-par">Address: 37/F, Hopewell Center, 183 Queen's Road East, Wanchai, HK</p>
           <p class="box-title">Beijing, AOST Center ( Ai Open Source Technology Center )</p>
-          <p class="box-par">Address: 19/F, block C, Ocean International Center, No.62, East Fourth Ring Middle Road, Chaoyang District, Beijing</p>
+          <p class="box-par">Address: 21/F, block C, Ocean International Center, No.62, East Fourth Ring Middle Road, Chaoyang District, Beijing</p>
 
         </div>
 
