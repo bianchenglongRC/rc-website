@@ -23,12 +23,12 @@
       <!--s: serves map-->
       <div class="rc-serve-map">
 
-         <img src="../assets/rc-map.png"/>
+        <div class="rc-map rc-flag-map"></div>
 
          <div class="rc-serve-bar">
 
-           <span class="rc-icon rc-serve-lovu" :class="serveBol?'rc-rotatein':''"></span>
-           <span class="rc-icon rc-serve-chat" :class="serveBol?'rc-rotatein delay_5':''"></span>
+           <span class="rc-serve-lovu rc-lovu-svg" :class="serveBol?'rc-rotatein':''"></span>
+           <span class="rc-serve-chat rc-livechat-svg" :class="serveBol?'rc-rotatein delay_5':''"></span>
 
          </div>
 

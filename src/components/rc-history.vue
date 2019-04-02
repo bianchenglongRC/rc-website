@@ -68,8 +68,8 @@
           <!--s: 2016-->
           <div class="path-info rc-2016" :class="historyBol?'rc-fadeinR delay_in_2':''">
             <div class="rc-place">
-              <span class="rc-icon rc-icon-lovu"></span>
-              <span class="rc-icon rc-icon-chat"></span>
+              <span class="rc-icon-lovu rc-lovu-svg"></span>
+              <span class="rc-icon-chat rc-livechat-svg"></span>
             </div>
             <p>Hey, we were born!</p>
           </div>
@@ -84,7 +84,7 @@
 
           <!--s: 2H2017-->
           <div class="path-info rc-2H2017" :class="historyBol?'rc-fadeinR delay_in_4':''">
-            <span class="rc-icon rc-icon-cup"></span>
+            <span class="rc-icon-cup rc-cup-svg"></span>
             <p class="rc-icon-title">Top 3 in</p>
             <div class="rc-icon-path">
               <span class="rc-flag rc-flag-icon-sa"></span>
@@ -95,7 +95,7 @@
 
           <!--s: 1Q2018-->
           <div class="path-info rc-1Q2018" :class="historyBol?'rc-fadeinL delay_in_5':''">
-            <span class="rc-icon rc-icon-cup"></span>
+            <span class="rc-icon-cup rc-cup-svg"></span>
             <p class="rc-icon-title">Top 3 in</p>
             <div class="rc-icon-path">
               <span class="rc-flag rc-flag-icon-es"></span>
@@ -108,7 +108,7 @@
 
           <!--s: 2Q2018-->
           <div class="path-info rc-2Q2018" :class="historyBol?'rc-fadeinB delay_in_6':''">
-            <span class="rc-icon rc-icon-cup"></span>
+            <span class="rc-icon-cup rc-cup-svg"></span>
             <p class="rc-icon-title">Top 3 in</p>
             <div class="rc-icon-path">
               <span class="rc-flag rc-flag-icon-gb"></span>
@@ -121,7 +121,7 @@
 
           <!--s: 3Q2018-->
           <div class="path-info rc-3Q2018" :class="historyBol?'rc-fadeinT delay_in_7':''">
-            <span class="rc-icon rc-icon-cup"></span>
+            <span class="rc-icon-cup rc-cup-svg"></span>
             <p class="rc-icon-title">Top 3 in</p>
             <div class="rc-icon-path">
               <span class="rc-flag rc-flag-icon-br"></span>
@@ -131,7 +131,7 @@
 
           <!--s: 4Q2018-->
           <div class="path-info rc-4Q2018 " :class="historyBol?'rc-fadeinB delay_in_8':''">
-            <span class="rc-icon rc-icon-cup"></span>
+            <span class="rc-icon-cup rc-cup-svg"></span>
             <p class="rc-icon-title">#1 in</p>
             <div class="rc-icon-path">
               <span class="rc-flag rc-flag-icon-in"></span>

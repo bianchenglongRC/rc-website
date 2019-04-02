@@ -5,14 +5,11 @@ import app from '@/view/index'
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',
   routes: [
     {
       path: '/',
       name:'app',
-      redirect: '/app'
-    },
-    {
-      path: '/app',
       component: resolve => require(['../view/index'], resolve),
     },
   ]

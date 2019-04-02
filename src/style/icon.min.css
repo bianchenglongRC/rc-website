@@ -1,4 +1,3 @@
-.rc-icon{ background-image: url("../assets/rc-icon.png"); background-repeat: no-repeat; background-size: cover}
 .rc-match-icon{ background-image: url("../assets/match-ico.png");background-repeat: no-repeat; background-size: cover}
 .rc-flag{
   background-size: contain;
@@ -8,6 +7,21 @@
 }
 .rc-flag:before {
   content: "\00a0";
+}
+.rc-flag-map{
+  background-image: url(../assets/flags/map.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center top;
+}
+.rc-lovu-svg{
+  background-image: url(../assets/icon/rc-lovu.svg);
+}
+.rc-livechat-svg{
+  background-image: url(../assets/icon/rc-livechat.png);
+}
+.rc-cup-svg{
+  background-image: url(../assets/icon/rc-cup.svg);
 }
 .rc-flag-icon-sa {
   background-image: url(../assets/flags/sa.svg);

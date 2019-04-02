@@ -4,7 +4,7 @@
 
 
     <!--s: banner top-->
-    <Banner></Banner>
+    <Banner ref="myBannerchild"></Banner>
     <!--e: banner top-->
 
     <!--s: modular-->
@@ -130,7 +130,7 @@
         this.modularObj = obj
       },
       historyFun(key){
-        this.historyKey = key
+        this.historyKey = key;
       },
       moduleFun(key){
         this.moduleKey = key
@@ -154,9 +154,8 @@
           _this.clientHeight = window.innerHeight;
         })()
       }
+      this.$refs.myBannerchild.parentBannerClick(this.historyKey+this.layoutTop-10);
     },
-    created(){
-    }
   }
 </script>
 

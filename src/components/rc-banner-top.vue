@@ -20,8 +20,8 @@
 
         <div class="banner-link-btn">
 
-          <a href="javascript:" class="common-learn">Learn more</a>
-          <a href="javascript:" class="common-view">View video</a>
+          <a href="javascript:" class="common-learn" @click="scrollFun">Learn more</a>
+          <!--<a href="javascript:" class="common-view">View video</a>-->
 
         </div>
 
@@ -38,7 +38,21 @@
     import Logo from '@/components/rc-logo'
     export default {
         name: "app",
-        components:{ Logo }
+        components:{ Logo },
+        data () {
+          return {
+            scrollKey:'',
+          }
+        },
+        methods:{
+          scrollFun(){
+            document.documentElement.scrollTop = this.scrollKey
+            document.body.scrollTop = this.scrollKey
+          },
+          parentBannerClick(key){
+             this.scrollKey = key
+          }
+        },
     }
 </script>
 
