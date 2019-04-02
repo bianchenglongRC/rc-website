@@ -17,50 +17,93 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+
 official website 工程结构
 
-├── build  构建相关  
-├── config   配置相关
-├── src    源代码
-│   ├── assets      静态资源
-│   │     ├── flags  地图svg
-│   │     ├── icon   icon svg
-│   │     └── 静态图片
-│   ├── components   全局公用组件  （各组件取到当前offsetTop传向view/index.vue）
-│   │     ├── rc-banner-top.vue  banner 第一屏
-│   │     ├── rc-footer.vue   页尾
-│   │     ├── rc-history.vue  第三屏 折线图
-│   │     ├── rc-info.vue 第五屏
-│   │     ├── rc-logo.vue  logo
-│   │     ├── rc-matching.vue 第六屏  匹配数字 粒子动画
-│   │     ├── rc-matching-view.vue 第七屏
-│   │     ├── rc-modular.vue 第二屏
-│   │     ├── rc-module-wrap.vue 语言条
-│   │     └── rc-serve.vue 第四屏 地图
-│   ├── router   路由
-│   │     └── index.js 路由配置文件
-│   ├── style  全局样式
-│   │     ├── animation.css  动画主文件
-│   │     ├── icon.min.css   icon引入文件
-│   │     └── style.min.css  公共样式单
-│   ├── view
-│   │    └── index.vue 各组件注入口（接收子组件的offsetTop 进行滚动条定位当前位置动画 true:addClass is-revealed false:removeClass）
-│   ├── App.vue 入口页面
-│   └── main.js  入口 加载组件 初始化等
-├── static 第三方不打包资源
-│   ├── img
-│   │    └── favicon.ico  ico 图标
-│   └── js   实现webgl粒子动画
-│        ├── CanvasRenderer.js  第三方插件
-│        ├── jquery.min.js   jquery 库
-│        ├── Projector.js    第三方插件
-│        ├── three.min.js    webGL库
-│        └── utils.min.js    调用
-├── .babelrc  babel-loader 配置
-├── eslintrc.js   eslint 配置项
-├── .gitignore  git 忽略项
-├── index.html    html模板
-└── package.json package.json
+build  构建相关 
+
+config   配置相关
+
+src    源代码
+ assets 静态资源
+
+   flags  地图svg
+   
+   icon   icon svg
+   
+   静态图片
+   
+ components  全局公用组件  （各组件取到当前offsetTop传向view/index.vue）
+   
+   rc-banner-top.vue  banner 第一屏
+   
+   rc-footer.vue   页尾
+   
+   rc-history.vue  第三屏 折线图
+   
+   rc-info.vue 第五屏
+   
+   rc-logo.vue  logo
+   
+   rc-matching.vue 第六屏  匹配数字 粒子动画
+   
+   rc-matching-view.vue 第七屏
+   
+   rc-modular.vue 第二屏
+   
+   rc-module-wrap.vue 语言条
+   
+   rc-serve.vue 第四屏 地图
+   
+ router  路由
+ 
+   index.js 路由配置文件
+   
+ style
+ 
+   animation.css  动画主文件
+   
+   icon.min.css   icon引入文件  
+   
+   style.min.css  公共样式单
+   
+ view
+ 
+   index.vue 各组件注入口（接收子组件的offsetTop 进行滚动条定位当前位置动画 true:addClass is-revealed false:removeClass）
+   
+ App.vue 入口页面    
+     
+ main.js  入口 加载组件 初始化等
+ 
+ 
+static  第三方不打包资源
+
+  img
+  
+   favicon.ico  ico 图标
+  
+  js
+  
+   CanvasRenderer.js  第三方插件
+   
+   jquery.min.js   jquery 库
+   
+   Projector.js    第三方插件
+   
+   three.min.js    webGL库
+   
+   utils.min.js    调用
+   
+.babelrc  babel-loader 配置
+
+eslintrc.js   eslint 配置项 
+
+.gitignore  git 忽略项
+
+index.html    html模板
+
+package.json package.json
+
 
 
  rc-website/src/assets/flags
