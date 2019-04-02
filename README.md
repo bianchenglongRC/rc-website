@@ -17,7 +17,6 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
- rc-website/src/assets/flags
 
   sa.svg  沙特阿拉伯王国
   
