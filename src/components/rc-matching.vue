@@ -1,6 +1,6 @@
 <template>
 
-  <section class="layout all-bg" style="float:left;height:580px;margin-top:50px;">
+  <section class="layout all-bg" style="float:left;height:580px;margin-top:30px;">
 
     <div id="WebGlMain"></div>
 
@@ -22,7 +22,7 @@
     data () {
       return {
         layoutTimer:null,
-        layoutNum:localStorage.getItem('num') == null || localStorage.getItem('num') == ''?'7535430000':localStorage.getItem('num'),
+        layoutNum:localStorage.getItem('num') == null || localStorage.getItem('num') == ''?'19535430000':localStorage.getItem('num'),
         numString:''
       }
     },
