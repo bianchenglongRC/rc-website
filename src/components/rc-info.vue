@@ -17,58 +17,31 @@
 
             <span class="rc-info-lovu rc-lovu-svg" :class="infoObj.infoTop?'rc-rotatein':''"></span>
             <div class="rc-info-lovu-bg" :class="infoObj.infoTop?'is-revealed rc-fadeinR delay_5':''">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 132 54" style="enable-background:new 0 0 132 54;">
-                <g>
-                  <defs>
-                    <path id="SVGID_1_" d="M43.321,27.188c-4.225,0-6.946,3.498-6.946,9.018c0,5.502,2.703,8.982,6.946,8.982    c4.225,0,6.929-3.48,6.929-8.982C50.25,30.685,47.547,27.188,43.321,27.188z M43.312,19.125c9.778,0,15.938,6.56,15.938,17.074    c0,10.491-6.16,17.051-15.938,17.051c-9.801,0-15.938-6.56-15.938-17.051C27.375,25.685,33.512,19.125,43.312,19.125z"/>
-                  </defs>
-                  <clipPath id="SVGID_2_">
-                    <use xlink:href="#SVGID_1_" style="overflow:visible;"/>
-                  </clipPath>
-                  <rect x="22.375" y="14.125" style="clip-path:url(#SVGID_2_);fill:#7000E2;" width="41.875" height="44.125"/>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="图层_1" x="0px" y="0px" viewBox="0 0 150.735 44.099" style="enable-background:new 0 0 150.735 44.099;" xml:space="preserve">
+                <g id="ic" style="display:none;">
+                  <path style="display:inline;fill-rule:evenodd;clip-rule:evenodd;fill:#7000E2;" d="M-197.733-76.901h102.136   c21.936,0,39.719,17.783,39.719,39.719V64.954c0,21.936-17.783,39.719-39.719,39.719h-102.136   c-21.936,0-39.719-17.783-39.719-39.719V-37.182C-237.452-59.118-219.669-76.901-197.733-76.901L-197.733-76.901z"/>
+                  <path style="display:inline;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M-78.22,14.475   c0-38.126-30.644-69.034-68.445-69.034s-68.445,30.907-68.445,69.034s30.644,67.856,68.445,67.856   c6.988,0,16.078-2.171,27.271-6.512l0,0c5.307-2.058,11.099-2.52,16.665-1.328l8.953,1.917c2.598,0.556,5.155-1.099,5.712-3.697   c0.164-0.764,0.139-1.557-0.073-2.309l-1.855-6.6c-1.481-5.27-0.926-10.903,1.554-15.783C-81.626,34.619-78.22,23.437-78.22,14.475   L-78.22,14.475z"/>
+                  <path style="display:inline;fill:#7000E2;" d="M-201.634,2.231c0-2.35,1.905-4.256,4.256-4.256c2.35,0,4.256,1.905,4.256,4.256   v11.857c0,4.193,3.425,7.601,7.66,7.601h3.83c2.35,0,4.256,1.905,4.256,4.256c0,2.35-1.905,4.256-4.256,4.256h-3.83   c-8.926,0-16.171-7.209-16.171-16.112V2.231L-201.634,2.231z M-124.039,2.231c0-2.35,1.905-4.256,4.256-4.256   s4.256,1.905,4.256,4.256v11.857c0,4.193,3.425,7.601,7.66,7.601c4.235,0,7.66-3.408,7.66-7.601V2.231   c0-2.35,1.905-4.256,4.256-4.256s4.256,1.905,4.256,4.256v11.857c0,8.903-7.245,16.112-16.171,16.112   c-8.926,0-16.171-7.209-16.171-16.112V2.231L-124.039,2.231z M-142.977,16.466l8.113-16.146c1.055-2.1,3.613-2.947,5.713-1.892   c2.1,1.055,2.947,3.613,1.892,5.713l-11.916,23.713c-1.571,3.126-6.034,3.126-7.605,0l-11.916-23.713   c-1.055-2.1-0.208-4.658,1.892-5.713c2.1-1.055,4.658-0.208,5.713,1.892L-142.977,16.466L-142.977,16.466z M-174.61,17.475   c0-2.35,1.905-4.256,4.256-4.256c2.35,0,4.256,1.905,4.256,4.256v8.469c0,2.35-1.905,4.256-4.256,4.256   c-2.35,0-4.256-1.905-4.256-4.256V17.475L-174.61,17.475z"/>
+                  <path style="display:inline;fill:#FF448C;" d="M-170.355,0.519l1.129-1.223c1.594-1.727,4.287-1.835,6.014-0.241   c1.727,1.594,1.835,4.287,0.241,6.014l-4.256,4.61c-1.685,1.826-4.569,1.826-6.254,0l-4.256-4.61   c-1.594-1.727-1.487-4.419,0.241-6.014s4.419-1.486,6.014,0.241L-170.355,0.519L-170.355,0.519z"/>
+                </g>
+                <g id="mask">
+                  <path style="fill:#7000E2;" d="M0,5.88c0-3.212,2.612-5.815,5.835-5.815c3.223,0,5.835,2.604,5.835,5.815v16.202   c0,5.73,4.696,10.386,10.503,10.386h5.251c3.223,0,5.835,2.604,5.835,5.815c0,3.212-2.612,5.815-5.835,5.815h-5.251   C9.933,44.099,0,34.248,0,22.082V5.88L0,5.88z M106.39,5.88c0-3.212,2.612-5.815,5.835-5.815s5.835,2.604,5.835,5.815v16.202   c0,5.73,4.696,10.386,10.503,10.386s10.503-4.657,10.503-10.386V5.88c0-3.212,2.612-5.815,5.835-5.815   c3.223,0,5.835,2.604,5.835,5.815v16.202c0,12.166-9.934,22.017-22.173,22.017c-12.239,0-22.173-9.851-22.173-22.017V5.88   L106.39,5.88z M80.424,25.332L91.548,3.269c1.447-2.87,4.954-4.027,7.834-2.585c2.879,1.442,4.041,4.937,2.594,7.807L85.638,40.895   c-2.154,4.272-8.273,4.272-10.427,0L58.873,8.491c-1.447-2.87-0.286-6.365,2.594-7.807c2.88-1.442,6.387-0.285,7.834,2.585   L80.424,25.332L80.424,25.332z M37.052,26.711c0-3.212,2.612-5.815,5.835-5.815c3.223,0,5.835,2.604,5.835,5.815v11.573   c0,3.212-2.612,5.815-5.835,5.815c-3.223,0-5.835-2.604-5.835-5.815V26.711L37.052,26.711z"/>
                 </g>
                 <g class="pant">
                   <defs>
-                    <path id="SVGID_3_" d="M96,3.116l1.193-1.293c1.686-1.826,4.533-1.94,6.359-0.254c1.826,1.686,1.94,4.533,0.254,6.359l-4.5,4.875    c-1.782,1.93-4.831,1.93-6.613,0l-4.5-4.875c-1.686-1.826-1.572-4.673,0.254-6.359c1.826-1.686,4.673-1.572,6.359,0.254L96,3.116z    "/>
+                     <path id="SVGID_3_" style="fill:#FD4189;" d="M42.886,3.542l1.547-1.671c2.186-2.36,5.877-2.507,8.245-0.329s2.516,5.857,0.33,8.217l-5.835,6.3   c-2.31,2.495-6.265,2.495-8.575,0l-5.835-6.3c-2.186-2.36-2.038-6.039,0.33-8.217c2.368-2.178,6.059-2.031,8.245,0.329   L42.886,3.542L42.886,3.542z"/>
                   </defs>
                   <clipPath id="SVGID_4_">
                       <use xlink:href="#SVGID_3_" style="overflow:visible;"/>
                     </clipPath>
-                    <rect  x="82" y="-4.625" style="clip-path:url(#SVGID_4_);fill:#FF448C;" width="28" height="23.875"/>
+                  <rect  x="28" y="-4.625" style="clip-path:url(#SVGID_4_);fill:#FF448C;" width="28" height="23.875"/>
                   </g>
-                <g>
-               	<defs>
-		              <path id="SVGID_5_" d="M0,23.675c0-2.485,2.015-4.5,4.5-4.5S9,21.19,9,23.675v12.537c0,4.434,3.621,8.037,8.1,8.037h4.05    c2.485,0,4.5,2.015,4.5,4.5s-2.015,4.5-4.5,4.5H17.1C7.661,53.25,0,45.627,0,36.213V23.675z"/>
-	              </defs>
-                  <clipPath id="SVGID_6_">
-		             <use xlink:href="#SVGID_5_" style="overflow:visible;"/>
-	               </clipPath>
-                  <rect x="-5" y="14.175" style="clip-path:url(#SVGID_6_);fill:#7000E2;" width="35.65" height="44.075"/>
-                </g>
-                <g>
-                  <defs>
-                    <path id="SVGID_7_" d="M97.8,23.675c0-2.485,2.015-4.5,4.5-4.5c2.485,0,4.5,2.015,4.5,4.5v12.537c0,4.434,3.621,8.037,8.1,8.037    s8.1-3.603,8.1-8.037V23.675c0-2.485,2.015-4.5,4.5-4.5c2.485,0,4.5,2.015,4.5,4.5v12.537c0,9.414-7.661,17.037-17.1,17.037    s-17.1-7.623-17.1-17.037V23.675z"/>
-                  </defs>
-                  <clipPath id="SVGID_8_">
-                    <use xlink:href="#SVGID_7_" style="overflow:visible;"/>
-                  </clipPath>
-                  <rect x="92.8" y="14.175" style="clip-path:url(#SVGID_8_);fill:#7000E2;" width="44.2" height="44.075"/>
-                </g>
-                <g>
-                  <defs>
-                    <path id="SVGID_9_" d="M77.775,38.728l8.579-17.073c1.116-2.221,3.821-3.116,6.041-2s3.116,3.821,2,6.041l-12.6,25.075    c-1.661,3.306-6.381,3.306-8.042,0l-12.6-25.075c-1.116-2.221-0.22-4.925,2-6.041c2.221-1.116,4.926-0.22,6.041,2L77.775,38.728z"/>
-                  </defs>
-                  <clipPath id="SVGID_10_">
-                    <use xlink:href="#SVGID_9_" style="overflow:visible;"/>
-                  </clipPath>
-                  <rect x="55.674" y="14.174" style="clip-path:url(#SVGID_10_);fill:#7000E2;" width="44.202" height="44.076"/>
-                </g>
                 </svg>
             </div>
 
           </div>
 
-          <p class="rc-info" :class="infoObj.infoTop?'rc-fadeinB delay_5':''">Powered by machine learning and deep learning algorithms, LovU is the largest AI dating platform in India and one of the most popular mobile platforms on the market. It provides users a unique, personalized and comprehensive way to find classic romance, enabling them to discover and explore themes of love and friendship.</p>
+          <p class="rc-info" :class="infoObj.infoTop?'rc-fadeinB delay_5':''">Powered by machine learning and deep learning algorithms, LivU is the largest AI dating platform in India and one of the most popular mobile platforms on the market. It provides users a unique, personalized and comprehensive way to find classic romance, enabling them to discover and explore themes of love and friendship.</p>
 
           <a href="http://www.lovuchat.com/" target="_blank" class="info-learn">Learn more</a>
 
@@ -96,7 +69,7 @@
 
           </div>
 
-          <p class="rc-info" :class="infoObj.chatTop?'rc-fadeinB delay_5':''">Livechat is a mobile video community application. Base on machine learning and deep learning Livechat allows its users to capture joyful moments in their video broadcast live on mobile devices at anytime and anywhere. Livechat, which implies sharing your happy moments has become a popular lifestyle for young generation.</p>
+          <p class="rc-info" :class="infoObj.chatTop?'rc-fadeinB delay_5':''">Tumile is a mobile video community application. Base on machine learning and deep learning tumile allows its users to capture joyful moments in their video broadcast live on mobile devices at anytime and anywhere. tumile, which implies sharing your happy moments has become a popular lifestyle for young generation.</p>
 
           <a href="http://www.livechatstar.com/" target="_blank" class="info-learn">Learn more</a>
 

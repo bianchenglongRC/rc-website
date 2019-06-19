@@ -12,7 +12,7 @@
 
         <div class="layer center-header">
 
-          <h1 class="rc-fadeinB">Bigger than Imagination.</h1>
+          <h1 class="rc-fadeinB">In Algorithm and Crush we Believe.</h1>
           <p class="banner-desc rc-fadeinB delay_2">A person’s view can make everything bigger, you’re not wrong.</p>
           <p class="banner-desc desc-right rc-fadeinL delay_5">--Riley</p>
 
