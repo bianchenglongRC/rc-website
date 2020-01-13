@@ -23,7 +23,7 @@
 
     </div>
 
-    <div class="footer-warp">Copyrights 2019 Riley Cillian. All Rights Reserved.</div>
+    <div class="footer-warp">Copyrights 2019 Riley Cillian. All Rights Reserved. &nbsp;&nbsp; <a href="https://h5.livuchat.com/company/index.html" target="_blank" style="color: #fff; text-decoration: underline;">More Company Information</a></div>
 
   </section>
 
